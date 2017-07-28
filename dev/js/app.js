@@ -10,7 +10,7 @@ app.run(["$ionicPlatform", '$icu', '$rootScope', '$ionicHistory', '$timeout', fu
   $ionicPlatform.ready(function () {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
-
+    window.alert(1);
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
@@ -31,7 +31,7 @@ app.run(["$ionicPlatform", '$icu', '$rootScope', '$ionicHistory', '$timeout', fu
     }, false);
   });
   $ionicPlatform.registerBackButtonAction(function (e) {
-    if ($icu.getPath() == '/tab/login' || $icu.getPath() == '/tab/recommend') {
+    if ($icu.getPath() == '/tab/dash') {
       if ($rootScope.backButtonPressedOnceToExit) {
         ionic.Platform.exitApp();
       } else {
