@@ -4,8 +4,7 @@
 node_modules/
 platforms/
 plugins/
-resources/
-hook/
 .git/
+.idea/
 
 
