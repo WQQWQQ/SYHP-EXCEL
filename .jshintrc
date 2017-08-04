@@ -9,7 +9,8 @@
         "ionic":true,
         "Connection":true,
         "cordova":true,
-        "StatusBar":true
+        "StatusBar":true,
+        "$":true
     },
 
     /**
