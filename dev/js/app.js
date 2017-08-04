@@ -10,7 +10,6 @@ app.run(["$ionicPlatform", '$icu', '$rootScope', '$ionicHistory', '$timeout', fu
   $ionicPlatform.ready(function () {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
-    window.alert(1);
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
@@ -81,7 +80,6 @@ app.config(["$stateProvider", "$urlRouterProvider", '$ionicConfigProvider', func
   $ionicConfigProvider.views.maxCache(20);
   $stateProvider
 
-    // setup an abstract state for the tabs directive
     .state('tab', {
       url: '/tab',
       abstract: true,
