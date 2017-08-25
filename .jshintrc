@@ -9,7 +9,7 @@
     "maxerr": 5000, // {int} Maximum error before stopping ** Get ALL the errors **
 
     // Enforcing - true = enforce this rule, false = don't enforce this rule
-    "bitwise": true, // true: Prohibit bitwise operators (&, |, ^, etc.)
+    "bitwise": false, // true: Prohibit bitwise operators (&, |, ^, etc.)
     "camelcase": false, // true: Identifiers must be in camelCase
     "curly": false, // true: Require {} for every new block or scope
     "eqeqeq": false, // true: Require triple equals (===) for comparison ** Just use triples with undefined, null, false, 0 and 1 **
@@ -21,7 +21,7 @@
     "noempty": true, // true: Prohibit use of empty blocks
     "nonew": true, // true: Prohibit use of constructors for side-effects (without assignment) ** Coding style enforcement **
     "plusplus": false, // true: Prohibit use of `++` & `--`
-    "quotmark": true, // Quotation mark consistency: ** Use the same style. Doubles should be used in most cases **
+    "quotmark": false, // Quotation mark consistency: ** Use the same style. Doubles should be used in most cases **
     //   false    : do nothing (default)
     //   true     : ensure whatever is used is consistent
     //   "single" : require single quotes
@@ -47,7 +47,7 @@
     "moz": false, // true: Allow Mozilla specific syntax (extends and overrides esnext features)
     // (ex: `for each`, multiple try/catch, function expression…)
     "evil": false, // true: Tolerate use of `eval` and `new Function()`
-    "expr": false, // true: Tolerate `ExpressionStatement` as Programs
+    "expr": true, // true: Tolerate `ExpressionStatement` as Programs
     "funcscope": true, // true: Tolerate defining variables inside controls statements ** Other variable checks keep use from abusing this **
     "globalstrict": false, // true: Allow global "use strict" (also enables 'strict')
     "iterator": false, // true: Tolerate using the `__iterator__` property
@@ -94,6 +94,8 @@
     // ** `false` = don't allow variable to be redefined locally
     "globals": {
         "define": false,
-        "require": false
+        "require": false,
+        "dojo":true,
+        "gisConfig":true
     }
 }
